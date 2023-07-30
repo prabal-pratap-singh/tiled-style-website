@@ -14,12 +14,28 @@
     clip-path: inset(0 0 0 0);
   }
 }
+@keyframes wipe-out-left {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 100% 0 0);
+  }
+}
 @keyframes wipe-in-left {
   from {
     clip-path: inset(0 0 0 100%);
   }
   to {
     clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes wipe-out-right {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 100%);
   }
 }
 
@@ -31,6 +47,39 @@
     left: 0%;
   }
 }
+@keyframes right-to-invisible {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+@keyframes right-to-visible {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes wipe-out-down {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(100% 0 0 0);
+  }
+}
 
 @keyframes wipe-in-down {
   from {
@@ -40,6 +89,16 @@
     clip-path: inset(0 0 0 0);
   }
 }
+
+@keyframes wipe-out-up {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
 @keyframes wipe-in-up {
   from {
     clip-path: inset(100% 0 0 0);
@@ -100,7 +159,6 @@ html {
   animation: 0.75s cubic-bezier(0.25, 1, 0.3, 1) change-width-75;
 }
 
-
 #mobile-menu {
   position: absolute;
   top: 4%;
@@ -129,8 +187,9 @@ html {
   background-size: cover;
 }
 
-.img1 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both;
+.img_1 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
+  display: none;
   position: absolute;
   background-image: url("images/Goku-4k.jpg");
 
@@ -143,9 +202,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-
-.img2 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_2 {
+  display: none;
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -159,8 +218,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img3 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_3 {
+  display: none;
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
 
@@ -174,8 +234,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img4 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_4 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -188,8 +249,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img5 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_5 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/red-goku.jpg");
 
@@ -203,8 +265,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img6 {
-  animation: 1.2s right-to-left both;
+.img_6 {
+  /* animation: 1.2s right-to-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/golden-hair-goku.jpg");
 
@@ -219,8 +282,9 @@ html {
   z-index: 2;
 }
 
-.img7 {
-  animation: 1.2s right-to-left both;
+.img_7 {
+  /* animation: 1.2s right-to-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/blue-golden-bg-goku.jpg");
 
@@ -234,8 +298,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img8 {
-  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_8 {
+  /* animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/blue-hair-goku.jpg");
 
@@ -249,8 +314,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img9 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_9 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -264,8 +330,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img10 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_10 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
 
@@ -279,8 +346,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img11 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both;
+.img_11 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
+  display: none;
   position: absolute;
   background-image: url("images/Goku-4k.jpg");
 
@@ -294,8 +362,9 @@ html {
   z-index: 2;
 }
 
-.img12 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_12 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   /* background-image: url("images/goku-face.jpg"); */
   background-color: rgb(26, 26, 117);
@@ -311,8 +380,9 @@ html {
   z-index: 2;
 }
 
-.img13 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+.img_13 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
+  display: none;
   position: absolute;
   background-color: rgba(170, 146, 11, 0.906);
 
@@ -326,8 +396,9 @@ html {
   z-index: 2;
 }
 
-.img14 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both;
+.img_14 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
+  display: none;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -341,8 +412,9 @@ html {
   background-size: cover;
   z-index: 2;
 }
-.img15 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both;
+.img_15 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
+  display: none;
   position: absolute;
   background-image: url("images/blue-hair-goku.jpg");
 
@@ -356,8 +428,9 @@ html {
   z-index: 2;
 }
 
-.img16 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_16 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-color: black;
 
@@ -372,8 +445,9 @@ html {
   z-index: 2;
 }
 
-.img17 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+.img_17 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
+  display: none;
   position: absolute;
   background-color: rgb(223, 177, 10);
 
@@ -388,8 +462,9 @@ html {
   z-index: 2;
 }
 
-.img18 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both;
+.img_18 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
+  display: none;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -403,8 +478,9 @@ html {
   z-index: 2;
 }
 
-.img19 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both;
+.img_19 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
+  display: none;
   position: absolute;
   background-image: url("images/vegeta-dragon-ball.jpg");
 
@@ -418,8 +494,9 @@ html {
   z-index: 2;
 }
 
-.img20 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both;
+.img_20 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
+  display: none;
   position: absolute;
   background-image: url("images/red-goku.jpg");
 
@@ -433,8 +510,9 @@ html {
   z-index: 2;
 }
 
-.img21 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_21 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-color: grey;
 
@@ -449,8 +527,9 @@ html {
   z-index: 2;
 }
 
-.img22 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_22 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -465,8 +544,9 @@ html {
   z-index: 2;
 }
 
-.img23 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_23 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -480,8 +560,9 @@ html {
   z-index: 2;
 }
 
-.img24 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_24 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-color: grey;
 
@@ -495,8 +576,9 @@ html {
   z-index: 2;
 }
 
-.img25 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_25 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-color: rgba(255, 166, 0, 0.78);
 
@@ -511,8 +593,9 @@ html {
   z-index: 2;
 }
 
-.img26 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+.img_26 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
+  display: none;
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
 
@@ -527,8 +610,9 @@ html {
   z-index: 2;
 }
 
-.img27 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both;
+.img_27 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
+  display: none;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -542,8 +626,9 @@ html {
   z-index: 2;
 }
 
-.img28 {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both;
+.img_28 {
+  /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
+  display: none;
   position: absolute;
   background-color: black;
   height: 100%;
@@ -609,4 +694,3 @@ html {
   color: red;
   font-size: 2.2rem;
 }
-
