@@ -436,11 +436,12 @@ menu.addEventListener("click", function () {
     down_arrow.css("rotate", "-0deg");
   } else if (is_menu_present) {
     navbar_menu.removeClass("navbar_menu");
-    down_arrow.css("z-index", "2");
+    $(".down_arr_class").css("display", "flex");
+    $(".down_arr_class").css("z-index", "2");
     is_menu_present = false;
   } else if (!is_menu_present) {
     navbar_menu.addClass("navbar_menu");
-    down_arrow.css("z-index", "-1");
+    $(".down_arr_class").css("z-index", "-1");
     is_menu_present = true;
   }
   menu.classList.toggle("is-active");
