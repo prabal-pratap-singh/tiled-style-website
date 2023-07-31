@@ -34,14 +34,16 @@ const img26 = $(".img_26");
 const img27 = $(".img_27");
 const img28 = $(".img_28");
 
-$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
-$(window).on('load', function(){
+$("body").append(
+  '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
+);
+$(window).on("load", function () {
   setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
 });
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      $( "#loadingDiv" ).remove(); 
-  });  
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, function () {
+    $("#loadingDiv").remove();
+  });
 }
 
 $(window).bind("mousewheel", function (event) {
@@ -216,19 +218,19 @@ $(window).bind("mousewheel", function (event) {
       console.log("1");
       curr_page.push(1);
       img1
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
         );
       img2
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img3
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -240,13 +242,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("2");
       curr_page.push(2);
       img4
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img5
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -257,10 +259,10 @@ $(window).bind("mousewheel", function (event) {
     } else if (curr_page[curr_page.length - 1] == 2) {
       console.log("3");
       curr_page.push(3);
-      img6.css("display", "block").css("animation", "1.2s right-to-left both");
-      img7.css("display", "block").css("animation", "1.2s right-to-left both");
+      img6.css("z-index", "2").css("animation", "1.2s right-to-left both");
+      img7.css("z-index", "2").css("animation", "1.2s right-to-left both");
       img8
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.2s cubic-bezier(0.25, 1, 0.3, 1) right-to-visible both"
@@ -272,13 +274,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("4");
       curr_page.push(4);
       img9
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img10
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -290,13 +292,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("5");
       curr_page.push(5);
       img11
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
         );
       img12
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -308,13 +310,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("6");
       curr_page.push(6);
       img13
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both"
         );
       img14
-        .css("display", "block")
+        .css("z-index", "2")
         .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
       setTimeout(function () {
         scroll_debounce = true;
@@ -323,13 +325,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("7");
       curr_page.push(7);
       img15
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
         );
       img16
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -341,13 +343,13 @@ $(window).bind("mousewheel", function (event) {
       console.log("8");
       curr_page.push(8);
       img17
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both"
         );
       img18
-        .css("display", "block")
+        .css("z-index", "2")
         .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
       setTimeout(function () {
         scroll_debounce = true;
@@ -356,25 +358,25 @@ $(window).bind("mousewheel", function (event) {
       console.log("9");
       curr_page.push(9);
       img19
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
         );
       img20
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
         );
       img21
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img22
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -386,25 +388,25 @@ $(window).bind("mousewheel", function (event) {
       console.log("10");
       curr_page.push(10);
       img23
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img24
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img25
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
         );
       img26
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both"
@@ -416,10 +418,10 @@ $(window).bind("mousewheel", function (event) {
       console.log("11");
       curr_page.push(11);
       img27
-        .css("display", "block")
+        .css("z-index", "2")
         .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
       img28
-        .css("display", "block")
+        .css("z-index", "2")
         .css(
           "animation",
           "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both"
@@ -447,7 +449,7 @@ menu.addEventListener("click", function () {
   } else if (is_menu_present) {
     navbar_menu.removeClass("navbar_menu");
     $(".down_arr_class").css("display", "flex");
-    $(".down_arr_class").css("z-index", "2");
+    $(".down_arr_class").css("z-index", "3");
     is_menu_present = false;
   } else if (!is_menu_present) {
     navbar_menu.addClass("navbar_menu");
@@ -462,33 +464,33 @@ down_arrow.on("click", function () {
     console.log("1");
     curr_page.push(1);
     img1
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
       );
     img2
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img3
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 1) {
     console.log("2");
     curr_page.push(2);
     img4
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img5
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 2) {
     console.log("3");
     curr_page.push(3);
-    img6.css("display", "block").css("animation", "1.2s right-to-left both");
-    img7.css("display", "block").css("animation", "1.2s right-to-left both");
+    img6.css("z-index", "2").css("animation", "1.2s right-to-left both");
+    img7.css("z-index", "2").css("animation", "1.2s right-to-left both");
     img8
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.2s cubic-bezier(0.25, 1, 0.3, 1) right-to-visible both"
@@ -497,97 +499,97 @@ down_arrow.on("click", function () {
     console.log("4");
     curr_page.push(4);
     img9
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img10
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 4) {
     console.log("5");
     curr_page.push(5);
     img11
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
       );
     img12
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 5) {
     console.log("6");
     curr_page.push(6);
     img13
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both");
     img14
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
   } else if (curr_page[curr_page.length - 1] == 6) {
     console.log("7");
     curr_page.push(7);
     img15
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
       );
     img16
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 7) {
     console.log("8");
     curr_page.push(8);
     img17
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both");
     img18
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
   } else if (curr_page[curr_page.length - 1] == 8) {
     console.log("9");
     curr_page.push(9);
     img19
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
       );
     img20
-      .css("display", "block")
+      .css("z-index", "2")
       .css(
         "animation",
         "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both"
       );
     img21
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img22
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 9) {
     console.log("10");
     curr_page.push(10);
     img23
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img24
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img25
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
     img26
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both");
   } else if (curr_page[curr_page.length - 1] == 10) {
     console.log("11");
     curr_page.push(11);
     img27
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both");
     img28
-      .css("display", "block")
+      .css("z-index", "2")
       .css("animation", "1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both");
   } else if (curr_page[curr_page.length - 1] == 11) {
     console.log("12");
@@ -597,34 +599,34 @@ down_arrow.on("click", function () {
     down_arrow.css("rotate", "180deg");
   } else if (curr_page[curr_page.length - 1] == 12) {
     curr_page = [];
-    $(".img_1").css("display", "none");
-    $(".img_2").css("display", "none");
-    $(".img_3").css("display", "none");
-    $(".img_4").css("display", "none");
-    $(".img_5").css("display", "none");
-    $(".img_6").css("display", "none");
-    $(".img_7").css("display", "none");
-    $(".img_8").css("display", "none");
-    $(".img_9").css("display", "none");
-    $(".img_10").css("display", "none");
-    $(".img_11").css("display", "none");
-    $(".img_12").css("display", "none");
-    $(".img_13").css("display", "none");
-    $(".img_14").css("display", "none");
-    $(".img_15").css("display", "none");
-    $(".img_16").css("display", "none");
-    $(".img_17").css("display", "none");
-    $(".img_18").css("display", "none");
-    $(".img_19").css("display", "none");
-    $(".img_20").css("display", "none");
-    $(".img_21").css("display", "none");
-    $(".img_22").css("display", "none");
-    $(".img_23").css("display", "none");
-    $(".img_24").css("display", "none");
-    $(".img_25").css("display", "none");
-    $(".img_26").css("display", "none");
-    $(".img_27").css("display", "none");
-    $(".img_28").css("display", "none");
+    $(".img_1").css("z-index", "-2").css("animation", "");
+    $(".img_2").css("z-index", "-2").css("animation", "");
+    $(".img_3").css("z-index", "-2").css("animation", "");
+    $(".img_4").css("z-index", "-2").css("animation", "");
+    $(".img_5").css("z-index", "-2").css("animation", "");
+    $(".img_6").css("z-index", "-2").css("animation", "");
+    $(".img_7").css("z-index", "-2").css("animation", "");
+    $(".img_8").css("z-index", "-2").css("animation", "");
+    $(".img_9").css("z-index", "-2").css("animation", "");
+    $(".img_10").css("z-index", "-2").css("animation", "");
+    $(".img_11").css("z-index", "-2").css("animation", "");
+    $(".img_12").css("z-index", "-2").css("animation", "");
+    $(".img_13").css("z-index", "-2").css("animation", "");
+    $(".img_14").css("z-index", "-2").css("animation", "");
+    $(".img_15").css("z-index", "-2").css("animation", "");
+    $(".img_16").css("z-index", "-2").css("animation", "");
+    $(".img_17").css("z-index", "-2").css("animation", "");
+    $(".img_18").css("z-index", "-2").css("animation", "");
+    $(".img_19").css("z-index", "-2").css("animation", "");
+    $(".img_20").css("z-index", "-2").css("animation", "");
+    $(".img_21").css("z-index", "-2").css("animation", "");
+    $(".img_22").css("z-index", "-2").css("animation", "");
+    $(".img_23").css("z-index", "-2").css("animation", "");
+    $(".img_24").css("z-index", "-2").css("animation", "");
+    $(".img_25").css("z-index", "-2").css("animation", "");
+    $(".img_26").css("z-index", "-2").css("animation", "");
+    $(".img_27").css("z-index", "-2").css("animation", "");
+    $(".img_28").css("z-index", "-2").css("animation", "");
     navbar_menu.removeClass("navbar_menu");
     down_arrow.css("rotate", "-0deg");
   }

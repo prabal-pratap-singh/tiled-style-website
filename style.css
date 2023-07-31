@@ -189,7 +189,7 @@ html {
 
 .img_1 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/Goku-4k.jpg");
 
@@ -200,10 +200,10 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_2 {
-  display: none;
+  display: block;
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
   position: absolute;
   background-image: url("images/goku-face.jpg");
@@ -216,10 +216,10 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_3 {
-  display: none;
+  display: block;
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
@@ -232,11 +232,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_4 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -247,11 +247,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_5 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/red-goku.jpg");
 
@@ -263,11 +263,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_6 {
   /* animation: 1.2s right-to-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/golden-hair-goku.jpg");
 
@@ -279,12 +279,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_7 {
   /* animation: 1.2s right-to-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/blue-golden-bg-goku.jpg");
 
@@ -296,11 +296,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_8 {
   /* animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/blue-hair-goku.jpg");
 
@@ -312,11 +312,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_9 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -328,11 +328,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_10 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
 
@@ -344,11 +344,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_11 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/Goku-4k.jpg");
 
@@ -359,12 +359,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_12 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   /* background-image: url("images/goku-face.jpg"); */
   background-color: rgb(26, 26, 117);
@@ -377,12 +377,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_13 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: rgba(170, 146, 11, 0.906);
 
@@ -393,12 +393,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_14 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -410,11 +410,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .img_15 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/blue-hair-goku.jpg");
 
@@ -425,12 +425,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_16 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: black;
 
@@ -442,12 +442,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_17 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: rgb(223, 177, 10);
 
@@ -459,12 +459,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_18 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -475,12 +475,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_19 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/vegeta-dragon-ball.jpg");
 
@@ -491,12 +491,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_20 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right-100 both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/red-goku.jpg");
 
@@ -507,12 +507,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_21 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: grey;
 
@@ -524,12 +524,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_22 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -541,12 +541,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_23 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/goku-face.jpg");
 
@@ -557,12 +557,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_24 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: grey;
 
@@ -573,12 +573,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_25 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: rgba(255, 166, 0, 0.78);
 
@@ -590,12 +590,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_26 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/goku-half-body.jpg");
 
@@ -607,12 +607,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_27 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-up both; */
-  display: none;
+  display: block;
   position: absolute;
   background-image: url("images/standing-goku.jpg");
 
@@ -623,12 +623,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 
 .img_28 {
   /* animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-down both; */
-  display: none;
+  display: block;
   position: absolute;
   background-color: black;
   height: 100%;
@@ -638,7 +638,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: -2;
 }
 .down_arr_class {
   position: absolute;
@@ -648,19 +648,18 @@ html {
   top: 88%;
   left: 50%;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 #down_arrow {
   width: 60px;
   fill: #ffffff;
-  z-index: 2;
+  z-index: 3;
   transition: rotate 1s;
   margin-left: -100%;
 }
 
 .navbar_menu {
-  animation: 1.5 cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -695,7 +694,7 @@ html {
   transition: font-size 0.5s;
 }
 .navbar_menu_ul li:last-child {
-  border-bottom: none;
+  border-bottom: block;
 }
 .navbar_menu_ul li:hover {
   color: red;
