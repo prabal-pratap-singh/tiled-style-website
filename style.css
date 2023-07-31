@@ -694,7 +694,7 @@ html {
   transition: font-size 0.5s;
 }
 .navbar_menu_ul li:last-child {
-  border-bottom: block;
+  border-bottom: none;
 }
 .navbar_menu_ul li:hover {
   color: red;
