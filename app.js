@@ -34,6 +34,16 @@ const img26 = $(".img_26");
 const img27 = $(".img_27");
 const img28 = $(".img_28");
 
+$('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+$(window).on('load', function(){
+  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      $( "#loadingDiv" ).remove(); 
+  });  
+}
+
 $(window).bind("mousewheel", function (event) {
   if (event.originalEvent.wheelDelta >= 20 && scroll_debounce) {
     console.log("Scroll up", event.originalEvent.wheelDelta);
