@@ -259,10 +259,16 @@ $(window).bind("mousewheel", function (event) {
     } else if (curr_page[curr_page.length - 1] == 2) {
       console.log("3");
       curr_page.push(3);
-      img6.css("display","block").css("z-index", "2").css("animation", "1.2s right-to-left both");
-      img7.css("display","block").css("z-index", "2").css("animation", "1.2s right-to-left both");
+      img6
+        .css("display", "block")
+        .css("z-index", "2")
+        .css("animation", "1.2s right-to-left both");
+      img7
+        .css("display", "block")
+        .css("z-index", "2")
+        .css("animation", "1.2s right-to-left both");
       img8
-      .css("display","block")
+        .css("display", "block")
         .css("z-index", "2")
         .css(
           "animation",
@@ -488,9 +494,16 @@ down_arrow.on("click", function () {
   } else if (curr_page[curr_page.length - 1] == 2) {
     console.log("3");
     curr_page.push(3);
-    img6.css("z-index", "2").css("animation", "1.2s right-to-left both");
-    img7.css("z-index", "2").css("animation", "1.2s right-to-left both");
+    img6
+      .css("display", "block")
+      .css("z-index", "2")
+      .css("animation", "1.2s right-to-left both");
+    img7
+      .css("display", "block")
+      .css("z-index", "2")
+      .css("animation", "1.2s right-to-left both");
     img8
+      .css("display", "block")
       .css("z-index", "2")
       .css(
         "animation",
