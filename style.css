@@ -267,7 +267,7 @@ html {
 }
 .img_6 {
   /* animation: 1.2s right-to-left both; */
-  display: block;
+  display: none;
   position: absolute;
   background-image: url("https://images2.imgbox.com/ad/67/AP9fllwC_o.jpg");
 
@@ -284,7 +284,7 @@ html {
 
 .img_7 {
   /* animation: 1.2s right-to-left both; */
-  display: block;
+  display: none;
   position: absolute;
   background-image: url("https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
@@ -300,7 +300,7 @@ html {
 }
 .img_8 {
   /* animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both; */
-  display: block;
+  display: none;
   position: absolute;
   background-image: url("https://images.pexels.com/photos/17866322/pexels-photo-17866322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
