@@ -178,7 +178,7 @@ html {
 }
 
 .bg {
-  background-image: url("https://images.pexels.com/photos/17866320/pexels-photo-17866320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("images/309 3.png");
 
   height: 100%;
 
@@ -768,9 +768,243 @@ html {
   cursor: pointer;
   text-decoration: none;
   font-weight: 2rem;
-  font-size:x-large;
+  font-size: x-large;
   position: absolute;
-  z-index:3;
+  z-index: 3;
   top: 4%;
   left: 4%;
+}
+
+.space {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#saturn {
+  width: 33vh;
+  height: auto;
+  left: 70%;
+  position: relative;
+  top: 65%;
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  100% {
+    left: 70%;
+  }
+  75% {
+    left: 71%;
+  }
+  50% {
+    left: 70%;
+  }
+  25% {
+    left: 69%;
+  }
+  0% {
+    left: 70%;
+  }
+}
+
+#astroid {
+  width: 9vh;
+  height: auto;
+  top: 85%;
+  left: 12%;
+  position: absolute;
+  animation: astroid-slide 5s linear infinite;
+}
+
+@keyframes astroid-slide {
+  100% {
+    left: 12%;
+    top: 85%;
+  }
+  75% {
+    left: 13%;
+    top: 86%;
+  }
+  50% {
+    left: 12%;
+    top: 85%;
+  }
+  25% {
+    left: 11%;
+    top: 84%;
+  }
+  0% {
+    left: 12%;
+    top: 85%;
+  }
+}
+
+#green-planet {
+  width: 20vh;
+  height: auto;
+  top: 77%;
+  left: 22%;
+  position: absolute;
+  animation: green-planet-slide 4.5s linear infinite;
+}
+
+@keyframes green-planet-slide {
+  100% {
+    left: 22%;
+  }
+  75% {
+    left: 21%;
+  }
+  50% {
+    left: 22%;
+  }
+  25% {
+    left: 24%;
+  }
+  0% {
+    left: 22%;
+  }
+}
+
+#purple-planet {
+  width: 17vh;
+  height: auto;
+  top: -7%;
+  left: 63%;
+  position: absolute;
+  animation: purple-planet-slide 4.5s linear infinite;
+}
+
+@keyframes purple-planet-slide {
+  100% {
+    top: -7%;
+  }
+  75% {
+    top: -6%;
+  }
+  50% {
+    top: -7%;
+  }
+  25% {
+    top: -8%;
+  }
+  0% {
+    top: -7%;
+  }
+}
+
+#yellow-planet {
+  width: 25vh;
+  height: auto;
+  top: 19%;
+  left: 14%;
+  position: absolute;
+  animation: yellow-planet-slide 15s linear infinite;
+}
+
+@keyframes yellow-planet-slide {
+  100% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(-20deg);
+  }
+}
+
+#purple-strip-planet {
+  width: 25vh;
+  height: auto;
+  top: 33%;
+  left: -7%;
+  position: absolute;
+  animation: purple-strip-planet-slide 15s linear infinite;
+}
+
+#circle-astroid {
+  width: 12vh;
+  height: auto;
+  top: 33%;
+  left: 3%;
+  position: absolute;
+  offset-distance: 0%;
+  /* motion-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0'); */
+  /* offset-path: path('M85.294118,77.399381c-27.40333,1.720753-41.818395,17.401932-43.343653,41.486068.104835,22.321287,21.101438,43.784559,43.343652,41.486067c19.845113,1.754634,42.74355-17.148484,43.343652-41.486068-5.950281-32.618984-25.493292-39.041971-43.343651-41.486067Z'); */
+  /* animation: move 3s linear infinite; */
+  /* animation: move 8000ms infinite ease-in-out; */
+  transform: rotate(31deg);
+}
+
+@keyframes move {
+  100% {
+    motion-offset: 100%;
+    offset-distance: 100%;
+  }
+}
+
+@keyframes GFG {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg) translateX(100px) rotate(360deg);
+  }
+}
+
+@keyframes yellow-planet-slide {
+  100% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(-20deg);
+  }
+}
+
+#red-planet {
+  width: 19vh;
+  height: auto;
+  top: 6%;
+  left: 79%;
+  position: absolute;
+  animation: purple-strip-planet-slide 15s linear infinite;
+}
+#blue-river-planet {
+  width: 19vh;
+  height: auto;
+  top: 37%;
+  left: 93%;
+  position: absolute;
+}
+#yellow-small-planet {
+  width: 10vh;
+  height: auto;
+  top: -7%;
+  left: 70%;
+  position: absolute;
+}
+#blue-river-small-planet {
+  width: 7vh;
+  height: auto;
+  top: 13%;
+  left: 88%;
+  position: absolute;
 }
